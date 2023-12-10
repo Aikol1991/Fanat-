@@ -1,0 +1,71 @@
+.dropdown {
+  position: relative;
+
+  &__main {
+    border-radius: 6px;
+    padding: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--color-grey-secondary);
+    text-transform: capitalize;
+
+    &.open {
+      border-radius: 6px 6px 0 0;
+    }
+  }
+  .arrow {
+    transition: 0.2s ease-in;
+    &.open {
+      transform: rotate(-180deg);
+    }
+  }
+  span,
+  button {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+  }
+  &__box {
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px;
+    width: 100%;
+    background-color: var(--color-grey-secondary);
+    pointer-events: none;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in;
+
+    &.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__list {
+    border-top: 1px solid #7e7e7e;
+    padding: 10px 0;
+    width: 100%;
+    transition: background 0.2s ease-in;
+
+    &:hover {
+      background: var(--color-grey-primary);
+    }
+    .label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .dropdown {
+    display: none;
+  }
+}

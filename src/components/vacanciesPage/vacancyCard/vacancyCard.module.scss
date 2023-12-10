@@ -1,0 +1,65 @@
+.card {
+  padding: 30px;
+  border-radius: 30px;
+  background: rgba($color: #18181a, $alpha: 0.8);
+  line-height: normal;
+  font-size: 20px;
+
+  h3,
+  .address {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: none;
+    font-family: "Ruda", sans-serif;
+  }
+  .address {
+    font-size: 20px;
+  }
+  .descr {
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: normal;
+  }
+  .descr.hidden {
+    max-height: 96px;
+  }
+  .more {
+    margin-top: 2px;
+    font-size: 20px;
+    color: #5794cd;
+    border-bottom: 1px solid #5794cd;
+  }
+  .btn {
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: 17px;
+    padding: 10px 34px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 20px;
+    font-size: 12px;
+
+    h3 {
+      font-size: 16px;
+    }
+    .address {
+      font-size: 12px;
+    }
+    .descr.hidden {
+      max-height: 165px;
+    }
+    .btn {
+      padding: 10px 24px;
+      font-size: 20px;
+    }
+  }
+}

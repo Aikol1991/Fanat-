@@ -1,0 +1,86 @@
+@import './variables.scss';
+@import url(https://fonts.googleapis.com/css?family=Ruda:regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+body {
+  background: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: white;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Ruda', sans-serif;
+}
+h2,
+h3 {
+  font-size: 48px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  background: transparent;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.App {
+  overflow: hidden;
+}
+.container {
+  padding: 0 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 10px;
+  padding: 10px 34px;
+  background-color: #282828;
+  color: white;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: white;
+    color: #282828;
+  }
+}
+.swiper-pagination {
+  position: static;
+  margin-top: 50px;
+
+  &-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #6b6b6b;
+    transition: all 0.3s ease-in;
+
+    &-active {
+      border-radius: 100px;
+      width: 35px;
+      background-color: white;
+    }
+  }
+}

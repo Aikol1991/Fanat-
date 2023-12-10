@@ -1,0 +1,213 @@
+.main {
+  width: 100%;
+  min-height: 677px;
+  background: url('../../../assets/images/prices-bg.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 80px;
+  padding-bottom: 42px;
+  h2 {
+    color: var(--, #fff);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .list {
+    width: 1369px;
+    padding: 5px;
+
+    .btnArrow_nex {
+      display: none;
+    }
+    .btnArrow_previuos {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 744px;
+    padding-top: 80px;
+    h2 {
+      font-size: 48px;
+    }
+    .list {
+      width: 1279px;
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .main {
+    .list {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 100%;
+    min-height: 441px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 80px;
+    
+    h2 {
+      color: var(--, #fff);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .list {
+      width: 924px;
+      .btnArrow_nex {
+        display: none;
+      }
+      .btnArrow_previuos {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+    background: black;
+    background-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 80px;
+    min-height: 441px;
+    .list {
+      width: 924px;
+      padding: 5px;
+    }
+  }
+}
+@media screen and (max-width: 977px) {
+  .main {
+    row-gap: 10px;
+    padding-top: 0px;
+    min-height: 447px;
+    h2 {
+      font-size: 1.3em;
+    }
+    .list {
+      width: 496px;
+
+      .btnArrow_nex {
+        top: 100px;
+        right: 0px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        background: #d9d9d9;
+        font-size: 0.8;
+        position: absolute;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 38px;
+          height: 38px;
+          transform: rotate(180deg);
+        }
+      }
+      .btnArrow_previuos {
+        top: 100px;
+        left: 2px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        background: #d9d9d9;
+        font-size: 0.8;
+        position: absolute;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 38px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 458px) {
+  .main {
+    height: 100%;
+    padding-top: 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 35px;
+    .erorrText {
+      padding: 30px;
+      text-align: center;
+    }
+    .list {
+      position: relative;
+      width: 321px;
+      height: 347px;
+      .btnArrow_nex {
+        top: 109px;
+        right: 0px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        background: #d9d9d9;
+        font-size: 0.8;
+        position: absolute;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 24px;
+          height: 24px;
+          transform: rotate(180deg);
+        }
+      }
+      .btnArrow_previuos {
+        top: 109px;
+        left: 0px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        background: #d9d9d9;
+        font-size: 0.8;
+        position: absolute;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

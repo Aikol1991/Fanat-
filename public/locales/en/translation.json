@@ -1,0 +1,41 @@
+{
+  "header": {
+    "menu": {
+      "about": "About us",
+      "services": "Services",
+      "prices": "Prices",
+      "contacts": "Contacts",
+      "vacancies": "Vacancies"
+    }
+  },
+  "main": {
+    "title": "Have fun with us",
+    "description": "A comfortable computer club that helps you reboot. Here you can relax, enjoy the game and find your community."
+  },
+  "about": {
+    "title": "About us",
+    "fanatIs": "Is a network of computer and Sony Playstation halls distributed throughout the city of Bishkek. Since 2014, we have been proud to serve a wide audience of gamers and entertainment lovers.",
+    "ourMission": "Create places where every gamer can find something that inspires and brings pleasure to them."
+  },
+  "services": {
+    "title": "Services"
+  },
+  "prices": {
+    "title": "Prices",
+    "button": "View"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "branch1": "Bezymiannaia 37/2",
+    "branch2": "Kievskaya 190",
+    "branch3": "Auezova 3B",
+    "branch4": "Aitmatova 29"
+  },
+  "vacancies": {
+    "title": "Vacancies",
+    "link1": "View more",
+    "link2": "Hide info",
+    "button": "Submit your application",
+    "empty": "There are no vacancies at the moment"
+  }
+}

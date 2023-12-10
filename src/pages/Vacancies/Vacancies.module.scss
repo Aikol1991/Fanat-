@@ -1,0 +1,29 @@
+.main {
+  padding: 130px 0 220px;
+  min-height: 1200px;
+  background: url("../../assets/images/vacancies-bg.png") no-repeat center;
+
+  h2 {
+    text-align: center;
+    text-transform: none;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .empty {
+    display: block;
+    text-align: center;
+  }
+}
+.container {
+  margin-top: 30px !important;
+
+  & div:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    padding-bottom: 150px;
+  }
+}

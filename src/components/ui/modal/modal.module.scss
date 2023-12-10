@@ -1,0 +1,246 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0 0 0 / 89%);
+  z-index: 500;
+  color: wheat;
+  .modal__block {
+    width: 930px;
+    height: 640px;
+    padding: 8px 8px 30px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #232323;
+    display: block;
+    position: relative;
+    z-index: 20;
+    .cross {
+      width: 50px;
+      height: 50px;
+      border-radius: 30px;
+      background: rgba(218, 218, 218, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 15;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .modal__swiper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 22px 57px 0px 57px;
+      position: relative;
+
+      .modal__slide {
+        width: 800px !important;
+        height: 580px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: auto;
+        .modal__btnPrev {
+          top: 289px;
+          left: -48px;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          background: wheat;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 15;
+          img {
+            width: 34px;
+            height: 34px;
+          }
+        }
+        .modal__btnNex {
+          top: 289px;
+          right: -48px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          background: wheat;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          img {
+            width: 34px;
+            height: 34px;
+            transform: rotate(180deg);
+          }
+        }
+        .modal__Hall {
+          width: 100%;
+          height: 300px;
+          border-radius: 20px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          padding-bottom: 20px;
+          .modal__title {
+            width: 220px;
+            padding: 7px 0px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            background: rgba(17, 16, 16, 0.6);
+            color: #fff;
+            text-align: center;
+            text-shadow: 0px 0px 10px #1137be;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .modal__prices {
+          width: 100%;
+          height: 250px;
+          border-radius: 20px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .modal {
+    .modal__block {
+      width: 845px;
+      height: 585px;
+      .cross {
+        width: 45px;
+        height: 45px;
+        img {
+          width: 27px;
+          height: 27px;
+        }
+      }
+      .modal__swiper {
+        padding: 22px 53px 0px 53px;
+        .modal__slide {
+          width: 720px !important;
+          height: 525px;
+          .modal__btnPrev {
+            top: 261px;
+            left: -47px;
+
+            width: 45px;
+            height: 45px;
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .modal__btnNex {
+            top: 261px;
+            right: -47px;
+            width: 45px;
+            height: 45px;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          .modal__Hall {
+            height: 270px;
+            .modal__title {
+              width: 200px;
+              font-size: 22px;
+            }
+          }
+          .modal__prices {
+            width: 100%;
+            height: 225px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .modal {
+    background: rgb(0 0 0 / 89%);
+    .modal__block {
+      width: 330px;
+      height: 320px;
+      padding: 0px;
+      .cross {
+        width: 25px;
+        height: 25px;
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .modal__swiper {
+        padding: 20px 25px 0px 25px;
+        .modal__slide {
+          width: 280px !important;
+          height: 280px;
+          row-gap: 10px;
+          .modal__btnPrev {
+            top: 145px;
+            left: -21px;
+            width: 20px;
+            height: 20px;
+            img {
+              width: 12px;
+              height: 12px;
+            }
+          }
+          .modal__btnNex {
+            top: 145px;
+            right: -21px;
+            width: 20px;
+            height: 20px;
+            img {
+              width: 12px;
+              height: 12px;
+            }
+          }
+
+          .modal__Hall {
+            height: 150px;
+            .modal__title {
+              width: 100px;
+              font-size: 12px;
+            }
+          }
+          .modal__prices {
+            width: 100%;
+            height: 120px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
